@@ -19,10 +19,6 @@ var last = 0;
 var best = 0;
 var face = ":)";
 
-function preload() {
-  font = loadFont('/coding/sketches/steering/AvenirNextLTPro-Demi.otf');
-}
-
 function setup() {
   var canvas = createCanvas(600, 700);
   canvas.parent('sketch-holder');
@@ -32,8 +28,6 @@ function setup() {
   button.position(540, 120);
   button.mousePressed(reset);
   button.hide();
-
-  textFont(font);
 
   engine = Engine.create();
   world = engine.world;
