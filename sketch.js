@@ -14,7 +14,7 @@ var blink = 0;
 var scoreit = 0;
 var maxturns = 1;
 var turn = maxturns;
-var score = 520;
+var score = 515;
 var last = 0;
 var best = 0;
 var face = ":)";
@@ -23,9 +23,9 @@ function setup() {
   var canvas = createCanvas(600, 700);
   canvas.parent('sketch-holder');
 
-  button = createButton('Slay Again');
+  button = createButton('Play Again');
   button.parent('sketch-holder');
-  button.position(520, 120);
+  button.position(515, 120);
   button.mousePressed(reset);
   button.hide();
 
